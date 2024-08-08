@@ -1,29 +1,36 @@
-﻿class CelciusOmregner
+﻿namespace HF1
 {
-    static void Main(string[] args)
+    internal class CelciusOmregner
     {
-        while (true)
+        internal static void Run()
         {
-            Console.Write("Indtast temperatur i Celciusgrader (eller 'q' for at quitte): ");
-            string input = Console.ReadLine();
-            
-            if (input.ToLower() == "q")
+            Console.Clear();
+            Console.Title = "Celcius Omregner";
             {
-                break;
-            }
-            
-            try
-            {
-                double celcius = double.Parse(input);
-                double reamur = celcius * 0.8;
-                double fahrenheit = celcius * 1.8 + 32;
-                
-                Console.WriteLine($"Reamur: {reamur:F2}°Ré");
-                Console.WriteLine($"Fahrenheit: {fahrenheit:F2}°F");
-            }
-            catch (FormatException)
-            {
-                Console.WriteLine("Ugyldig indtastning. Prøv igen!");
+                while (true)
+                {
+                    Console.Write("Indtast temperatur i Celciusgrader (eller 'q' for at quitte): ");
+                    string input = Console.ReadLine();
+
+                    if (input.ToLower() == "q")
+                    {
+                        break;
+                    }
+
+                    try
+                    {
+                        double celcius = double.Parse(input);
+                        double reamur = celcius * 0.8;
+                        double fahrenheit = celcius * 1.8 + 32;
+
+                        Console.WriteLine($"Reamur: {reamur:F2}°Ré");
+                        Console.WriteLine($"Fahrenheit: {fahrenheit:F2}°F");
+                    }
+                    catch (FormatException)
+                    {
+                        Console.WriteLine("Ugyldig indtastning. Prøv igen!");
+                    }
+                }
             }
         }
     }

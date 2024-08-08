@@ -2,7 +2,7 @@
 
 Console.CursorVisible = false;
 
-CMenu menu = new();
+Menu menu = new();
 menu.menuOptions = CreateMenuOptions();
 menu.Draw();
 
@@ -28,15 +28,15 @@ while(keepRunning)
     }
 }
 
-static List<CMenu.MenuOption> CreateMenuOptions()
+static List<Menu.MenuOption> CreateMenuOptions()
 {
     return
     [
         new ("Exit", () => { Environment.Exit(0); }),
-        new ("Celcius Omregner", CCelciusOmregner.Run),
-        new ("Valuta Omregner", CValutaOmregner.Run),
-        new ("Rumfanget", CRumfanget.Run),
-        new ("Terningkast", CTerningKast.Run),
+        new ("Celcius Omregner", CelciusOmregner.Run),
+        new ("Valuta Omregner", ValutaOmregner.Run),
+        new ("Rumfanget", RumfangBeregner.Run),
+        /*new ("Terningkast", TerningKast.Run),
         new ("Pythagoras", CPythagoras.Run),
         new ("Alder", CAlder.Run),
         new ("Gæt et tal", CGaetEtTal.Run),
@@ -45,6 +45,6 @@ static List<CMenu.MenuOption> CreateMenuOptions()
         new ("Løkker", CLoops.Run),
         new ("Array 1", CArray.Run),
         new ("Arrays", CArrays.Run),
-        new ("Arrays og bubblesort", CBubblesort.Run)
+        new ("Arrays og bubblesort", CBubblesort.Run)*/
     ];
 }
