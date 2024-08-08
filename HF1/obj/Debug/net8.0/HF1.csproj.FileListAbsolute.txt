@@ -1,0 +1,5 @@
+C:\Users\mathi\OneDrive\Dokumenter\GitHub\Mathias-Seeger\HF1\obj\Debug\net8.0\HF1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mathi\OneDrive\Dokumenter\GitHub\Mathias-Seeger\HF1\obj\Debug\net8.0\HF1.AssemblyInfoInputs.cache
+C:\Users\mathi\OneDrive\Dokumenter\GitHub\Mathias-Seeger\HF1\obj\Debug\net8.0\HF1.AssemblyInfo.cs
+C:\Users\mathi\OneDrive\Dokumenter\GitHub\Mathias-Seeger\HF1\obj\Debug\net8.0\HF1.csproj.CoreCompileInputs.cache
+C:\Users\mathi\OneDrive\Dokumenter\GitHub\Mathias-Seeger\HF1\obj\Debug\net8.0\HF1.sourcelink.json
