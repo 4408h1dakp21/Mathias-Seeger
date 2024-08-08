@@ -36,15 +36,15 @@ static List<Menu.MenuOption> CreateMenuOptions()
         new ("Celcius Omregner", CelciusOmregner.Run),
         new ("Valuta Omregner", ValutaOmregner.Run),
         new ("Rumfanget", RumfangBeregner.Run),
-        /*new ("Terningkast", TerningKast.Run),
-        new ("Pythagoras", CPythagoras.Run),
-        new ("Alder", CAlder.Run),
-        new ("Gæt et tal", CGaetEtTal.Run),
-        new ("Porto", CPorto.Run),
-        new ("Morse", CMorse.Run),
-        new ("Løkker", CLoops.Run),
-        new ("Array 1", CArray.Run),
-        new ("Arrays", CArrays.Run),
-        new ("Arrays og bubblesort", CBubblesort.Run)*/
+        new ("Terningkast", Terningkast.Run),
+        new ("Pythagoras", Pythagoras.Run),
+        new ("Alder", Alder.Run),
+        new ("Gæt et tal", Gaetettal.Run),
+        //new ("Porto", Porto.Run),
+        //new ("Morse", Morse.Run),
+        //new ("Løkker", Loops.Run),
+        //new ("Array 1", Array.Run),
+        //new ("Arrays", Arrays.Run),
+        //new ("Arrays og bubblesort", Bubblesort.Run)
     ];
 }

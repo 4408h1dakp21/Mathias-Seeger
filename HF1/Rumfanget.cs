@@ -1,11 +1,11 @@
-﻿namespace HF1
-{
+﻿namespace HF1;
+
     internal class RumfangBeregner
     {
         internal static void Run()
         {
             Console.Clear();
-            Console.Title = "Celcius Omregner";
+            Console.Title = "Rumfanget";
             {
                 while (true)
                 {
@@ -41,4 +41,3 @@
             }
         }
     }
-}

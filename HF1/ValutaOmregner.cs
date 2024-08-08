@@ -1,11 +1,11 @@
-﻿namespace HF1
-{
+﻿namespace HF1;
+
     internal class ValutaOmregner
     {
         internal static void Run()
         {
             Console.Clear();
-            Console.Title = "Celcius Omregner";
+            Console.Title = "Valuta Omregner";
             {
                 while (true)
                 {
@@ -39,4 +39,3 @@
             }
         }
     }
-}
