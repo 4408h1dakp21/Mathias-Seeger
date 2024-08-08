@@ -1,6 +1,6 @@
 ﻿using System;
 
-class ValutaOmregner
+/*class ValutaOmregner
 {
     static void Main(string[] args)
     {
@@ -34,4 +34,4 @@ class ValutaOmregner
             }
         }
     }
-}
+}*/

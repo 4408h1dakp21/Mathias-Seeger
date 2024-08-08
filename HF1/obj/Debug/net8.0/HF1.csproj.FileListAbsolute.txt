@@ -3,3 +3,13 @@ C:\Users\mathi\OneDrive\Dokumenter\GitHub\Mathias-Seeger\HF1\obj\Debug\net8.0\HF
 C:\Users\mathi\OneDrive\Dokumenter\GitHub\Mathias-Seeger\HF1\obj\Debug\net8.0\HF1.AssemblyInfo.cs
 C:\Users\mathi\OneDrive\Dokumenter\GitHub\Mathias-Seeger\HF1\obj\Debug\net8.0\HF1.csproj.CoreCompileInputs.cache
 C:\Users\mathi\OneDrive\Dokumenter\GitHub\Mathias-Seeger\HF1\obj\Debug\net8.0\HF1.sourcelink.json
+C:\Users\mathi\OneDrive\Dokumenter\GitHub\Mathias-Seeger\HF1\bin\Debug\net8.0\HF1.exe
+C:\Users\mathi\OneDrive\Dokumenter\GitHub\Mathias-Seeger\HF1\bin\Debug\net8.0\HF1.deps.json
+C:\Users\mathi\OneDrive\Dokumenter\GitHub\Mathias-Seeger\HF1\bin\Debug\net8.0\HF1.runtimeconfig.json
+C:\Users\mathi\OneDrive\Dokumenter\GitHub\Mathias-Seeger\HF1\bin\Debug\net8.0\HF1.dll
+C:\Users\mathi\OneDrive\Dokumenter\GitHub\Mathias-Seeger\HF1\bin\Debug\net8.0\HF1.pdb
+C:\Users\mathi\OneDrive\Dokumenter\GitHub\Mathias-Seeger\HF1\obj\Debug\net8.0\HF1.dll
+C:\Users\mathi\OneDrive\Dokumenter\GitHub\Mathias-Seeger\HF1\obj\Debug\net8.0\refint\HF1.dll
+C:\Users\mathi\OneDrive\Dokumenter\GitHub\Mathias-Seeger\HF1\obj\Debug\net8.0\HF1.pdb
+C:\Users\mathi\OneDrive\Dokumenter\GitHub\Mathias-Seeger\HF1\obj\Debug\net8.0\HF1.genruntimeconfig.cache
+C:\Users\mathi\OneDrive\Dokumenter\GitHub\Mathias-Seeger\HF1\obj\Debug\net8.0\ref\HF1.dll

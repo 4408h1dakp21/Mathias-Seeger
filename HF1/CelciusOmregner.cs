@@ -1,6 +1,4 @@
-﻿using System;
-
-class CelciusOmregner
+﻿class CelciusOmregner
 {
     static void Main(string[] args)
     {
