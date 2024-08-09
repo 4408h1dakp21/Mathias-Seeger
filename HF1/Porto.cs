@@ -24,7 +24,7 @@ internal class Porto
                 }
                 else
                 {
-                    Console.WriteLine("Invalid country. Please enter Danmark or Sverige.");
+                    Console.WriteLine("Ikke validt land. Indtast Danmark eller Sverige.");
                     return;
                 }
 
@@ -47,7 +47,7 @@ internal class Porto
                     }
                     else
                     {
-                        Console.WriteLine("Invalid input. Please enter L for letter or P for package.");
+                        Console.WriteLine("Ubrugeligt input. Indtast (B) for brev eller (P) for pakke.");
                         return;
                     }
                 }
