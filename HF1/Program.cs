@@ -40,7 +40,7 @@ static List<Menu.MenuOption> CreateMenuOptions()
         new ("Pythagoras", Pythagoras.Run),
         new ("Alder", Alder.Run),
         new ("Gæt et tal", Gaetettal.Run),
-        //new ("Porto", Porto.Run),
+        new ("Porto", Porto.Run),
         //new ("Morse", Morse.Run),
         //new ("Løkker", Loops.Run),
         //new ("Array 1", Array.Run),
