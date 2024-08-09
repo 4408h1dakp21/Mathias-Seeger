@@ -1,5 +1,4 @@
-﻿//Lav en porto beregner der følger denne logik for porto i danmark - brev 50g-250g = 25DKK, 250g-500g = 50DKK, 500g-5000g = 75DKK. pakke 50g-5000g = 55DKK, 5000g-10000g = 85DKK,+ 10000g-25000g = 125DKK, 25000g-35000g = 189DKK+29DKK, hvis den ikke indleveres
-namespace HF1;
+﻿namespace HF1;
 
 internal class Porto
 {
@@ -11,6 +10,24 @@ internal class Porto
             while (true)
             {
                 Console.WriteLine("Længde + omkreds: Max 300 cm\nLængde: Max 120 cm, eller 150 cm mod ekstra betaling");
+                Console.Write("Indsæt land (Danmark eller Sverige): ");
+                string countryInput = Console.ReadLine();
+
+                Country country;
+                if (countryInput.ToLower() == "danmark")
+                {
+                    country = Country.Denmark;
+                }
+                else if (countryInput.ToLower() == "sverige")
+                {
+                    country = Country.Sweden;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid country. Please enter Danmark or Sverige.");
+                    return;
+                }
+
                 Console.Write("Indsæt vægt (i gram): ");
                 int weight = Convert.ToInt32(Console.ReadLine());
 
@@ -41,12 +58,28 @@ internal class Porto
                     Console.WriteLine();
                 }
 
-                decimal porto = CalculatePorto(weight, portoType);
+                decimal porto = CalculatePorto(country, weight, portoType);
 
                 Console.WriteLine($"Portoen er: {porto:C2}");
                 Console.WriteLine();
+                Console.WriteLine("Tryk på en vilkårlig tast for at beregne ny porto. Eller tryk 'q' for at quitte");
+                string quit = Console.ReadLine();
+                if (quit.ToLower() == "q")
+                {
+                    break;
+                }
+                else
+                {
+                    Console.Clear();
+                }
             }
         }
+    }
+
+    private enum Country
+    {
+        Denmark,
+        Sweden
     }
 
     private enum PortoType
@@ -54,58 +87,109 @@ internal class Porto
         Letter,
         Package
     }
-
-    private static decimal CalculatePorto(int weight, PortoType portoType)
+        private static decimal CalculatePorto(Country country, int weight, PortoType portoType)
     {
         decimal porto = 0;
 
-        if (portoType == PortoType.Letter)
+        if (country == Country.Denmark)
         {
-            if (weight is >= 50 and <= 250)
+            if (portoType == PortoType.Letter)
             {
-                porto = 25;
+                if (weight is >= 50 and <= 250)
+                {
+                    porto = 25;
+                }
+                else if (weight is > 250 and <= 500)
+                {
+                    porto = 50;
+                }
+                else if (weight is > 500 and <= 2000)
+                {
+                    porto = 75;
+                }
+                else
+                {
+                    throw new ArgumentException("Ubrugelig vægt for brev");
+                }
             }
-            else if (weight is > 250 and <= 500)
+            else if (portoType == PortoType.Package)
             {
-                porto = 50;
-            }
-            else if (weight is > 500 and <= 5000)
-            {
-                porto = 75;
-            }
-            else
-            {
-                throw new ArgumentException("Ubrugelig vægt for brev");
+                if (weight is >= 50 and < 5000)
+                {
+                    porto = 55;
+                }
+                else if (weight == 5000)
+                {
+                    porto = 65;
+                }
+                else if (weight is > 5000 and < 10000)
+                {
+                    porto = 85;
+                }
+                else if (weight is > 10000 and < 25000)
+                {
+                    porto = 125;
+                }
+                else if (weight is >= 25000 and <= 35000)
+                {
+                    porto = 189 + 29;
+                }
+                else
+                {
+                    throw new ArgumentException("Ubrugelig vægt for pakke.");
+                }
             }
         }
-        else if (portoType == PortoType.Package)
+        else if (country == Country.Sweden)
         {
-            if (weight is >= 50 and < 5000)
+            if (portoType == PortoType.Letter)
             {
-                porto = 55;
+                if (weight == 100)
+                {
+                    porto = 50;
+                }
+                else if (weight == 250)
+                {
+                    porto = 100;
+                }
+                else if (weight is > 250 and <= 2000)
+                {
+                    porto = 150;
+                }
+                else
+                {
+                    throw new ArgumentException("Ubrugelig vægt for brev");
+                }
             }
-            else if (weight == 5000)
+            else if (portoType == PortoType.Package)
             {
-                porto = 65;
-            }
-            else if (weight is > 5000 and <= 10000)
-            {
-                porto = 85;
-            }
-            else if (weight is > 10000 and <= 25000)
-            {
-                porto = 125;
-            }
-            else if (weight is > 25000 and <= 35000)
-            {
-                porto = 189 + 29;
-            }
-            else
-            {
-                throw new ArgumentException("Ubrugelig vægt for pakke.");
+                if (weight is >= 100 and <= 1000)
+                {
+                    porto = 207;
+                }
+                else if (weight is > 1000 and <= 5000)
+                {
+                    porto = 301;
+                }
+                else if (weight is > 5000 and <= 10000)
+                {
+                    porto = 486;
+                }
+                else if (weight == 15000)
+                {
+                    porto = 579;
+                }
+                else if (weight == 20000)
+                {
+                    porto = 748;
+                }
+                else
+                {
+                    throw new ArgumentException("Ubrugelig vægt for pakke.");
+                }
             }
         }
         
         return porto;
+        }
     }
-}
