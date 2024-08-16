@@ -1,0 +1,14 @@
+C:\Users\zbc23mhse\RiderProjects\DigitaltUr\DigitaltUr\bin\Debug\net8.0\DigitaltUr.exe
+C:\Users\zbc23mhse\RiderProjects\DigitaltUr\DigitaltUr\bin\Debug\net8.0\DigitaltUr.deps.json
+C:\Users\zbc23mhse\RiderProjects\DigitaltUr\DigitaltUr\bin\Debug\net8.0\DigitaltUr.runtimeconfig.json
+C:\Users\zbc23mhse\RiderProjects\DigitaltUr\DigitaltUr\bin\Debug\net8.0\DigitaltUr.dll
+C:\Users\zbc23mhse\RiderProjects\DigitaltUr\DigitaltUr\bin\Debug\net8.0\DigitaltUr.pdb
+C:\Users\zbc23mhse\RiderProjects\DigitaltUr\DigitaltUr\obj\Debug\net8.0\DigitaltUr.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zbc23mhse\RiderProjects\DigitaltUr\DigitaltUr\obj\Debug\net8.0\DigitaltUr.AssemblyInfoInputs.cache
+C:\Users\zbc23mhse\RiderProjects\DigitaltUr\DigitaltUr\obj\Debug\net8.0\DigitaltUr.AssemblyInfo.cs
+C:\Users\zbc23mhse\RiderProjects\DigitaltUr\DigitaltUr\obj\Debug\net8.0\DigitaltUr.csproj.CoreCompileInputs.cache
+C:\Users\zbc23mhse\RiderProjects\DigitaltUr\DigitaltUr\obj\Debug\net8.0\DigitaltUr.dll
+C:\Users\zbc23mhse\RiderProjects\DigitaltUr\DigitaltUr\obj\Debug\net8.0\refint\DigitaltUr.dll
+C:\Users\zbc23mhse\RiderProjects\DigitaltUr\DigitaltUr\obj\Debug\net8.0\DigitaltUr.pdb
+C:\Users\zbc23mhse\RiderProjects\DigitaltUr\DigitaltUr\obj\Debug\net8.0\DigitaltUr.genruntimeconfig.cache
+C:\Users\zbc23mhse\RiderProjects\DigitaltUr\DigitaltUr\obj\Debug\net8.0\ref\DigitaltUr.dll
